@@ -1,0 +1,78 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;        /* ← remove horizontal padding, Container handles it */
+    gap: 2rem;
+}
+
+.textSection {
+    flex: 1;
+    min-width: 0;
+}
+
+.textSection h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.imageSection {
+    flex: 1;
+    min-width: 0;           /* ← key fix, prevents overflow */
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+    border-radius: 12px;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.active {
+    opacity: 1;
+}
+.ctaButton {
+    background: #ec4899;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.ctaButton:hover {
+    background: #c9357a;
+    transform: translateY(-2px);
+}
+
+.ctaButtonOutline {
+    background: transparent;
+    color: #ec4899;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 2px solid #ec4899;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ctaButtonOutline:hover {
+    background: #fff0f7;
+}

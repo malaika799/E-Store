@@ -1,0 +1,103 @@
+.footer {
+  background: #1a1a2e;
+  color: #ccc;
+  margin-top: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+}
+
+.mutedText {
+  color: #aaa;
+}
+
+.colTitle {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-bottom: 2px solid #ec4899;
+  padding-bottom: 8px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.footerLink {
+  font-size: 0.875rem;
+  color: #aaa;
+  transition: color 0.2s ease;
+  display: block;
+}
+
+.footerLink:hover {
+  color: #ec4899;
+}
+
+.socialBtn {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: #2a2a4a;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.socialBtn:hover {
+  background: #ec4899;
+  color: #fff;
+}
+
+.newsletterInput {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  background: #f0f0f0;
+  color: #1a1a1a;
+  border: none;
+  outline: none;
+}
+
+.newsletterBtn {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  background: #ec4899;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.newsletterBtn:hover {
+  background: #c9357a;
+}
+
+.trustBar {
+  background: #12122a;
+  border-top: 1px solid #2a2a4a;
+}
+
+.bottomBar {
+  background: #0d0d1f;
+  border-top: 1px solid #2a2a4a;
+}
+
+.bottomText {
+  color: #666;
+}
+
+.bottomLink {
+  color: #666;
+  transition: color 0.2s ease;
+}
+
+.bottomLink:hover {
+  color: #ec4899;
+}

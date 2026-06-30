@@ -1,0 +1,262 @@
+/* ───────────────────────────────────────────────
+   Page wrapper
+─────────────────────────────────────────────── */
+.pageWrapper {
+  min-height: 100vh;
+  background: #f8f8f6;
+  padding: 48px 16px;
+}
+
+/* ───────────────────────────────────────────────
+   Card (two-column layout)
+─────────────────────────────────────────────── */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* ───────────────────────────────────────────────
+   Image panel
+─────────────────────────────────────────────── */
+.imageWrapper {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f2f2ef;
+}
+
+@media (min-width: 768px) {
+  .imageWrapper {
+    width: 420px;
+  }
+}
+
+.productImage {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.imageWrapper:hover .productImage {
+  transform: scale(1.04);
+}
+
+/* Discount badge overlaid on image */
+.discountBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #e53e3e;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+/* ───────────────────────────────────────────────
+   Details panel
+─────────────────────────────────────────────── */
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Category pill */
+.category {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #e64b8f;
+  background: #fff0f7;
+  padding: 4px 12px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+/* Title */
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.25;
+  margin: 0;
+}
+
+/* Brand */
+.brand {
+  font-size: 0.875rem;
+  color: #888;
+  margin: 0;
+}
+
+/* Description */
+.description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.7;
+  border-top: 1px solid #f0f0ee;
+  padding-top: 14px;
+}
+
+/* ───────────────────────────────────────────────
+   Pricing
+─────────────────────────────────────────────── */
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.originalPrice {
+  font-size: 1rem;
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.saveBadge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #2f855a;
+  background: #f0fff4;
+  border: 1px solid #9ae6b4;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* ───────────────────────────────────────────────
+   Rating row
+─────────────────────────────────────────────── */
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.stars {
+  color: #f6ad55;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.ratingValue {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.stock {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2f855a;
+  background: #f0fff4;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* ───────────────────────────────────────────────
+   Specs list
+─────────────────────────────────────────────── */
+.specsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #f0f0ee;
+  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.specsList li {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.specsList li strong {
+  color: #222;
+  margin-right: 4px;
+}
+
+/* ───────────────────────────────────────────────
+   Action buttons
+─────────────────────────────────────────────── */
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.btnCart {
+  flex: 1;
+  min-width: 160px;
+  padding: 14px 24px;
+  background: #e64b8f;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.btnCart:hover {
+  background: #c9357a;
+  transform: translateY(-2px);
+}
+
+.btnCart:active {
+  transform: translateY(0);
+}
+
+.btnWishlist {
+  padding: 14px 20px;
+  background: #fff;
+  color: #e64b8f;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: 2px solid #e64b8f;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.btnWishlist:hover {
+  background: #fff0f7;
+  transform: translateY(-2px);
+}
