@@ -1,5 +1,5 @@
 "use client"
-import Container from '@/components/Container'
+import Container from '@/Components/Container'
 import React from 'react'
 
 export default function error() {
